@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".admin.AddVehicleActivity">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="255dp"
+            android:text="Vehicle Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="244dp"
+            android:text="Select Category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVName" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="132dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="212dp"
+            android:text="Taxes and Fees"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRent" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="255dp"
+            android:text="No. of People"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTax" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="255dp"
+            android:text="No. of Luggage:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPeople" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="252dp"
+            android:text="Vehicle Image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLuggage" />
+
+        <EditText
+            android:id="@+id/txtVName"
+            android:layout_width="265dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginEnd="77dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <EditText
+            android:id="@+id/txtRent"
+            android:layout_width="267dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginEnd="75dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <EditText
+            android:id="@+id/txtTax"
+            android:layout_width="267dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginEnd="75dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <EditText
+            android:id="@+id/txtPeople"
+            android:layout_width="267dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="75dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <EditText
+            android:id="@+id/txtLuggage"
+            android:layout_width="267dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <CheckBox
+            android:id="@+id/checkAuto"
+            android:layout_width="268dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="74dp"
+            android:text="Automatic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spCategory" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="251dp"
+            android:layout_height="143dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="91dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+            <RadioButton
+                android:id="@+id/rdbStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Standard" />
+
+            <RadioButton
+                android:id="@+id/rdbInter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intermediate" />
+
+            <RadioButton
+                android:id="@+id/rdbCompact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compact" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="308dp"
+            android:text="Type:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkAuto" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="281dp"
+            android:text="Rent/Day:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <ImageView
+            android:id="@+id/imgCar"
+            android:layout_width="266dp"
+            android:layout_height="138dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33"
+            app:srcCompat="@drawable/ic_menu_gallery" />
+
+        <Button
+            android:id="@+id/btnAddVehicle"
+            android:layout_width="409dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="1dp"
+            android:text="ADD VEHICLE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerLocation" />
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="270dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginEnd="74dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="193dp"
+            android:text="No. of available vehicle:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgCar" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="287dp"
+            android:text="Location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNoVeh" />
+
+        <EditText
+            android:id="@+id/txtNoVeh"
+            android:layout_width="267dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="74dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <Spinner
+            android:id="@+id/spinnerLocation"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="76dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UserReviewActivity">
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="413dp"
+            android:layout_height="37dp"
+            android:background="#F2F3F6"
+            android:paddingStart="20dp"
+            android:paddingTop="7dp"
+            android:text="PICK-UP LOCATION"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="413dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="27dp"
+            android:background="#F2F3F6"
+            android:paddingStart="20dp"
+            android:paddingTop="7dp"
+            android:text="VEHICLE DETAILS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/returnd" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="274dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="101dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="100dp"
+            android:text="Pick-Up Day"
+            app:layout_constraintEnd_toStartOf="@+id/pickup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <TextView
+            android:id="@+id/pickup"
+            android:layout_width="142dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="19dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/returnd"
+            app:layout_constraintStart_toEndOf="@+id/textView38"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <ImageView
+            android:id="@+id/vehicle"
+            android:layout_width="252dp"
+            android:layout_height="156dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="107dp"
+            android:text="Return Day"
+            app:layout_constraintEnd_toStartOf="@+id/returnd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <TextView
+            android:id="@+id/returnd"
+            android:layout_width="140dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="19dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/textView41"
+            app:layout_constraintTop_toBottomOf="@+id/pickup" />
+
+        <TextView
+            android:id="@+id/vehname"
+            android:layout_width="184dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="89dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="138dp"
+            android:text="TextView"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="191dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="89dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="131dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vehicle" />
+
+        <TextView
+            android:id="@+id/auto"
+            android:layout_width="190dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="89dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="132dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vehname" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="406dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:background="#F2F3F6"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:text="RENTAL COST"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/auto" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="135dp"
+            android:text="Rental"
+            app:layout_constraintEnd_toStartOf="@+id/rental"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+        <TextView
+            android:id="@+id/rental"
+            android:layout_width="150dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="50dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Taxes and Fees"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="152dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="21dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/total"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rental" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="25dp"
+            android:text="Estimated Total"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="50dp"
+            android:text="TextView"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tax" />
+
+        <TextView
+            android:id="@+id/termsTxt"
+            android:layout_width="411dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="16dp"
+            android:text="Rental Terms and Conditions"
+            android:textColor="#3F51B5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+        <Button
+            android:id="@+id/pickBtn"
+            android:layout_width="406dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="3dp"
+            android:text="BOOK NOW"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/termsTxt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

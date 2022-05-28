@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.capstoneproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CapstoneProject">
+        <activity
+            android:name=".admin.BookingDetailsActivity"
+            android:exported="false"
+            android:label="Booking Details"
+            android:parentActivityName=".admin.BookingListActivity"/>
+        <activity
+            android:name=".admin.BookingListActivity"
+            android:exported="true"
+            android:label="Bookings"
+            android:parentActivityName=".admin.AdminHomeActivity"></activity>
+        <activity
+            android:name=".UserReviewActivity"
+            android:exported="false"
+            android:label="Summary and Review"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".UserVehicleListActivity"
+            android:exported="false"
+            android:label="Available Vehicles"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".SearchLocationActivity"
+            android:exported="false"
+            android:label="" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" >
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".ReservationActivity"
+            android:exported="true"
+            android:label="Reservation"
+            android:parentActivityName=".MainActivity" >
+
+        </activity>
+        <activity
+            android:name=".admin.VehicleListActivity"
+            android:exported="true"
+            android:label="Available Vehicles"
+            android:parentActivityName=".admin.AdminHomeActivity"/>
+        <activity
+            android:name=".admin.AddVehicleActivity"
+            android:exported="true"
+            android:label="Add Vehicle"
+            android:parentActivityName=".admin.AdminHomeActivity" />
+        <activity
+            android:name=".admin.AddCategoryActivity"
+            android:exported="false"
+            android:label="Add Category"
+            android:parentActivityName=".admin.AdminHomeActivity" />
+        <activity
+            android:name=".admin.AddLocationActivity"
+            android:exported="true"
+            android:label="Add Location"
+            android:parentActivityName=".admin.AdminHomeActivity" />
+        <activity
+            android:name=".admin.AdminHomeActivity"
+            android:exported="true"
+            android:label="Welcome">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity2"
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar"/>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar"/>
+        <activity
+            android:name=".LandingPage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar" >
+
+        </activity>
+    </application>
+
+</manifest>

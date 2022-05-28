@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/rImgCar"
+        android:layout_width="334dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/rTxtType"
+        android:layout_width="189dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="43dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/rtxtPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rImgCar" />
+
+    <TextView
+        android:id="@+id/rTxtName"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rtxtPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rTxtType" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="205dp"
+        android:text="Unlimited mileage included"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rTxtName" />
+
+    <TextView
+        android:id="@+id/rTxtAuto"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="#EFEEEE"
+        android:paddingLeft="40dp"
+        android:paddingTop="9dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rTxtDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/rTxtDetails"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="#EFEEEE"
+        android:paddingLeft="40dp"
+        android:paddingTop="9dp"
+        android:text="More Details"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rTxtAuto"
+        app:layout_constraintTop_toBottomOf="@+id/rtxtPrice" />
+
+    <TextView
+        android:id="@+id/rtxtPrice"
+        android:layout_width="144dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="14dp"
+        android:background="#001E5A"
+        android:paddingTop="35dp"
+        android:text="text"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/rImgCar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

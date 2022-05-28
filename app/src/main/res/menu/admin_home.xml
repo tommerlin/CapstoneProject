@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_location"
+        android:title="addLocation"
+        android:icon="@drawable/ic_baseline_add_24"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/add_category"
+        android:title="Add Category"
+        app:showAsAction="never" />
+    <item android:id="@+id/add_vehicle"
+        android:title="Add Vehicle"
+        app:showAsAction="never" />
+    <item android:id="@+id/bookings"
+        android:title="Bookings"
+        app:showAsAction="never" />
+    <item android:id="@+id/view_vehicles"
+        android:title="View Vehicle"
+        app:showAsAction="never" />
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>
